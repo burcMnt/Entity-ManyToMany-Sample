@@ -24,8 +24,6 @@ namespace YayinciOtomasyonu
         private void YazarFormuResetle()
         {
             txtYazarAd.Clear();
-            
-
         }
 
         private void YazarlariListele()
@@ -42,10 +40,20 @@ namespace YayinciOtomasyonu
                 MessageBox.Show("Lütfen yazar adı alanını doldurun.");
                 return;
             }
-            db.Yazarlar.Add(new Yazar()
+
+            if (!db.Yazarlar.Any(x => x.Ad.Equals(ad)))
             {
-                Ad = ad
-            });
+                db.Yazarlar.Add(new Yazar()
+                {
+                    Ad = ad
+                });
+            }
+            else
+            {
+                MessageBox.Show("Bu isimde bir yazar kayıtlıdır,Lütfen farklı isimde bir yazar adı giriniz.");
+                YazarFormuResetle();
+                return;
+            }
             db.SaveChanges();
             YazarlariListele();
             YazarFormuResetle();

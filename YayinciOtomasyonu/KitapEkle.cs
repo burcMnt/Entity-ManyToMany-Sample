@@ -40,12 +40,20 @@ namespace YayinciOtomasyonu
                 MessageBox.Show("Lütfen kitap adı alanını doldurun.");
                 return;
             }
-
-            db.Kitaplar.Add(new Kitap()
+            if (!db.Kitaplar.Any(x => x.Ad.Equals(ad)))
             {
-                Ad = ad,
+                db.Kitaplar.Add(new Kitap()
+                {
+                    Ad = ad,
 
-            });
+                });
+            }
+            else
+            {
+                MessageBox.Show("Aynı isimde kitap adı bulunmaktadır,Lütfen farklı bir kitap adı deneyin.");
+                kitapFormuResetle();
+                return;
+            }
             db.SaveChanges();
             KitaplariListele();
             kitapFormuResetle();

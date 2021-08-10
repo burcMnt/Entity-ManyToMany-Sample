@@ -73,6 +73,7 @@ namespace YayinciOtomasyonu
             {
             Yazar yazar = (Yazar)cboYazar.SelectedItem;
             lstYazarinKitaplari.DataSource = yazar.Kitaplar.OrderBy(x => x.Ad).ToList();
+            lstYazarinKitaplari.DisplayMember = "Ad";
             }
         }
     }

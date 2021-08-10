@@ -36,9 +36,9 @@ namespace YayinciOtomasyonu
             // 
             // btnYeniYazarEkle
             // 
-            this.btnYeniYazarEkle.Location = new System.Drawing.Point(88, 46);
+            this.btnYeniYazarEkle.Location = new System.Drawing.Point(102, 44);
             this.btnYeniYazarEkle.Name = "btnYeniYazarEkle";
-            this.btnYeniYazarEkle.Size = new System.Drawing.Size(142, 81);
+            this.btnYeniYazarEkle.Size = new System.Drawing.Size(164, 91);
             this.btnYeniYazarEkle.TabIndex = 5;
             this.btnYeniYazarEkle.Text = "Yeni Yazar Ekle";
             this.btnYeniYazarEkle.UseVisualStyleBackColor = true;
@@ -46,9 +46,9 @@ namespace YayinciOtomasyonu
             // 
             // btnYeniKitapEkle
             // 
-            this.btnYeniKitapEkle.Location = new System.Drawing.Point(88, 143);
+            this.btnYeniKitapEkle.Location = new System.Drawing.Point(102, 152);
             this.btnYeniKitapEkle.Name = "btnYeniKitapEkle";
-            this.btnYeniKitapEkle.Size = new System.Drawing.Size(142, 84);
+            this.btnYeniKitapEkle.Size = new System.Drawing.Size(164, 94);
             this.btnYeniKitapEkle.TabIndex = 6;
             this.btnYeniKitapEkle.Text = "Yeni Kitap Ekle";
             this.btnYeniKitapEkle.UseVisualStyleBackColor = true;
@@ -56,9 +56,9 @@ namespace YayinciOtomasyonu
             // 
             // btnKitapYazariAta
             // 
-            this.btnKitapYazariAta.Location = new System.Drawing.Point(88, 243);
+            this.btnKitapYazariAta.Location = new System.Drawing.Point(102, 267);
             this.btnKitapYazariAta.Name = "btnKitapYazariAta";
-            this.btnKitapYazariAta.Size = new System.Drawing.Size(142, 80);
+            this.btnKitapYazariAta.Size = new System.Drawing.Size(164, 107);
             this.btnKitapYazariAta.TabIndex = 7;
             this.btnKitapYazariAta.Text = "Kitap Yazarı Tanımla";
             this.btnKitapYazariAta.UseVisualStyleBackColor = true;
@@ -68,13 +68,14 @@ namespace YayinciOtomasyonu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(334, 366);
+            this.ClientSize = new System.Drawing.Size(380, 433);
             this.Controls.Add(this.btnKitapYazariAta);
             this.Controls.Add(this.btnYeniKitapEkle);
             this.Controls.Add(this.btnYeniYazarEkle);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Kütüphane";
             this.ResumeLayout(false);
 

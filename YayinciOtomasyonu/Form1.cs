@@ -23,19 +23,25 @@ namespace YayinciOtomasyonu
         private void btnYeniYazarEkle_Click(object sender, EventArgs e)
         {
             YazarEkle yazarForm = new YazarEkle();
+            this.Visible = false;
             yazarForm.ShowDialog();
+            this.Visible = true;
         }
 
         private void btnYeniKitapEkle_Click(object sender, EventArgs e)
         {
             KitapEkle kitapForm = new KitapEkle();
+            this.Visible = false;
             kitapForm.ShowDialog();
+            this.Visible = true;
         }
 
         private void btnKitapYazariAta_Click(object sender, EventArgs e)
         {
             YazarVeKitaplar yazarKitap = new YazarVeKitaplar();
+            this.Visible = false;
             yazarKitap.ShowDialog();
+            this.Visible = true;
         }
     }
 }

@@ -101,6 +101,7 @@ namespace YayinciOtomasyonu
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "KitapEkle";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "KitapEkle";
             ((System.ComponentModel.ISupportInitialize)(this.dgvKitaplar)).EndInit();
             this.ResumeLayout(false);
